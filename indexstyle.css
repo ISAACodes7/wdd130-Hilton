@@ -106,7 +106,7 @@ nav button{
     padding: 16px;
     position: absolute;
     left: 90%;
-    top: 5%;
+    top: 50px;
 }
 .menu{
     display: none;
