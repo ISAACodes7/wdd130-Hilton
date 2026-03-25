@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Article Title -->
+    <title>Article Template</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="styles/article.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <h1>The Sharn Inquisitor Archive</h1>
+        <div class = buttondiv>
+            <button>|||</button>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="recent.html">Most Recent Article</a>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <main>
+    <a href="02-28-26-skrix.html"><p id="leftarrow"><</p></a>
+    <a href="02-26-26-gugalanna-games.html"><p id="rightarrow">></p></a>
+    <!-- Heading -->
+    <h3>The Smart vote is the Fool?</h3>
+    <!-- Author Information-->
+    <div id="author-info">
+    <img class="author-small" src="images/Picture8.png" alt="Author Name">
+    <p>By Truman Gottem</p>
+    <p id="date">02-28-26</p>
+    </div>
+    <!-- Article Text -->
+    <p>
+        The Fool Called V has entered into the running against Strix as Voice of the Senate.
+        Such a speaker can only fall to a man that speaks for the people, and between the two of them Mr V is the only one that seemed to allow a little bit of freedom in this rapidly changing political landscape.
+        <br><br>
+        In his own press conference he makes his intentions clear,
+        <br>
+        "I seek to allow the community express themselves and value partnership
+        <br>
+        "I seek to pursue commerce and grow the economy by hearing all sides of an argument before making a choice.
+        <br>
+        "If I get elected, I will host several people on my radio show."
+        <br><br>
+        A man of Laissez-faire economics and provider of the arts is in this humble reporters opinion a shoe in for the Position.
+        Strix will have to learn how to include the people he wants to speak for to get this vote.
+    </p>
+    <!-- Clipping -->
+    <br>
+    <button type="button" class="collapsible">Newspaper Clipping</button>
+    <div class="content"><img class="newspaper-clipping" src="images/Picture6.jpg" alt="Newspaper Clipping"></div>
+    </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+            
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        } 
+    </script>
+    <footer>
+    <h2>The Sharn Inquisitor Archive</h2>
+    <div id="footernav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="recent.html"> Most recent article</a>
+    </div>
+    </footer>
+</body>
+</html>

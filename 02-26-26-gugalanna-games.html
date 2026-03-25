@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Article Title -->
+    <title>Gugalanna Games Show Early Signs of Guild Conflicts</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="styles/article.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <h1>The Sharn Inquisitor Archive</h1>
+        <div class = buttondiv>
+            <button>|||</button>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="recent.html">Most Recent Article</a>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <main>
+    <a href="02-28-26-smart-vote.html"><p id="leftarrow"><</p></a>
+    <!-- Heading -->
+    <h3>Gugalanna Games Show Early Signs of Guild Conflicts</h3>
+    <!-- Author Information-->
+    <div id="author-info">
+    <img class="author-small" src="images/Picture7.jpg" alt="Author Name">
+    <p>By Sam Sabula</p>
+    <p id="date">02-26-26</p>
+    </div>
+    <!-- Article Text -->
+    <p>
+        Lorem ipsum,
+        <br><br>
+        Lorem ipsum dolor.
+    </p>
+    <!-- Clipping -->
+    <br>
+    <button type="button" class="collapsible">Newspaper Clipping</button>
+    <div class="content"><img class="newspaper-clipping" src="#" alt="Newspaper Clipping"></div>
+    </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+            
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        } 
+    </script>
+    <footer>
+    <h2>The Sharn Inquisitor Archive</h2>
+    <div id="footernav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="recent.html"> Most recent article</a>
+    </div>
+    </footer>
+</body>
+</html>

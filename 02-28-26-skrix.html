@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Article Title -->
+    <title>Article Template</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="styles/article.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <h1>The Sharn Inquisitor Archive</h1>
+        <div class = buttondiv>
+            <button>|||</button>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="recent.html">Most Recent Article</a>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <main>
+    <a href="03-01-26-gugalanna-games.html"><p id="leftarrow"><</p></a>
+    <a href="02-28-26-smart-vote.html"><p id="rightarrow">></p></a>
+    <!-- Heading -->
+    <h3>Skrix: Outcast Turned Protector</h3>
+    <!-- Author Information-->
+    <div id="author-info">
+    <img class="author-small" src="images/Picture8.png" alt="Author Name">
+    <p>By Truman Gottem</p>
+    <p id="date">02-28-26</p>
+    </div>
+    <!-- Article Text -->
+    <p>
+        Some outlandish malformed and probably just terrible smelling malcontents have been spreading around harmful rumors about Shrix, the Leader of the Final Talley guide and runner for Speaker of the Senate.
+        The rumors are worse in that it has reawakened his dark and tragic trauma of when Cybil Camurata banished all dead from the Hold.
+        A derisive move for sure!
+        Shrix supports his stance through strict separation from this style of governing.
+        <br><br>
+        "If you'll recall, a short time ago, Cybil Camurata released Gugalanna which resulted in the deaths of all my undead assets and the banishment of undead citizens and necromancy users from The Hold.
+        I know what it's like to be judged and cast out for what you are.
+        I won't be part of doing that to someone else.
+        <br>
+        "If someone lives within the Hold and respects its people, the deserve its protection whether they are fey, undead, winged, spectral, or anything else.
+        <br>
+        "When something is wrong, I will act.
+        <br>
+        "When someone is vulnerable, I will stand with them.
+        <br>
+        "When danger comes, I will face it."
+        <br><br>
+        There you have it. A strong and caring speaker. Choose your vote this day.
+    </p>
+    <!-- Clipping -->
+    <br>
+    <button type="button" class="collapsible">Newspaper Clipping</button>
+    <div class="content"><img class="newspaper-clipping" src="images/Picture5.jpg" alt="Newspaper Clipping"></div>
+    </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+            
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        } 
+    </script>
+    <footer>
+    <h2>The Sharn Inquisitor Archive</h2>
+    <div id="footernav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="recent.html"> Most recent article</a>
+    </div>
+    </footer>
+</body>
+</html>
