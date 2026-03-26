@@ -15,7 +15,6 @@
 .content {
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
     width: 400px;
     text-align: center;
     margin-left: 150px;
@@ -27,6 +26,7 @@
     padding: 5px;
     margin-left: 10px;
     opacity: 0.5;
+    text-shadow: 0 0 1px #4d563b;
 }
 #rightarrow {
     position: fixed;
@@ -35,6 +35,7 @@
     padding: 5px;
     margin-right: 10px;
     opacity: 0.5;
+    text-shadow: 0 0 1px #4d563b;
 }
 footer {
     position: fixed;
@@ -42,18 +43,43 @@ footer {
     height: 50px;
     width: 100%;
     text-align: center;
+    background-color: #9BA17F;
+    color: #E8E4DB;
+}
+header {
+    background-color: #9BA17F;
+    color: #E8E4DB;
+}
+a {
+    color: #687351;
+    background-color: bisque;
+}
+a:hover {
+    color: #E8E4DB;
+    background-color: #687351;
 }
 main {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 100px;
+    color: #687351;
+    background-image: url('../images/crumpled_paper.jpg');
 }
 h3 {
     text-align: center;
     font-size: 1.75em;
+    margin-top: 0;
+    padding-top: 10px;
 }
 img {
     max-width: 100%;
+}
+.article-photo {
+    justify-self: center;
+}
+#article-photo {
+    display: grid;
+    padding: 0 150px;
 }
 .author-small {
     height: 75px;
@@ -78,7 +104,4 @@ main p {
 }
 main button {
     margin-left: 150px;
-}
-.article-photo {
-    padding: 0 150px;
 }
