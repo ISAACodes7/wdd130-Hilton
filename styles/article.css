@@ -49,26 +49,11 @@ footer {
     height: 50px;
     width: 100%;
     text-align: center;
-    background-color: #9BA17F;
-    color: #E8E4DB;
-}
-header {
-    background-color: #9BA17F;
-    color: #E8E4DB;
-}
-a {
-    color: #687351;
-    background-color: bisque;
-}
-a:hover {
-    color: #E8E4DB;
-    background-color: #687351;
 }
 main {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 100px;
-    color: #687351;
     background-image: url('../images/crumpled_paper.jpg');
 }
 h3 {
