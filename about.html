@@ -6,6 +6,57 @@
     <title>About</title>
     <link rel="stylesheet" href="indexstyle.css">
     <link rel="stylesheet" href="styles/article.css">
+    <style>
+        h2 {
+            justify-self: center;
+            font-family: 'Quintessential', serif;
+            text-align: center;
+        }
+        main p {
+            padding: 0 75px;
+        }
+        #boss {
+            display: grid;
+            grid-template-columns: auto;
+            justify-items: center;
+        }
+        #press {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+        }
+        main {
+            padding-top: 5px;
+        }
+        .person {
+            text-align: center;
+            width: 90%;
+            border: 5px solid black;
+            border-radius: 25px;
+            display: grid;
+            justify-items: center;
+        }
+        #boss .person {
+            width: 50%;
+        }
+        .about-image {
+            height: 200px;
+            border: 5px solid black;
+            border-radius: 25px;
+            margin-top: 10px;
+        }
+        .about-text {
+            height: 200px;
+            width: 125px;
+            border: 5px solid black;
+            border-radius: 25px;
+            margin-top: 10px;
+            justify-self: center;
+        }
+        .person p {
+            padding: 0 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -33,7 +84,8 @@
     <br>
     <i>(Note: This page doesn’t get updated very often, so it’s quite possibly incorrect! Check the Discord server for the most up-to-date information on the Guild & its members.)</i></p>
     <h2>Management</h2>
-    <div class="boss">
+    <section id="boss">
+    <div class="person">
         <img class="about-image" src="images/Picture8.png" alt="Truman Gottem">
         <h3>Truman Gottem</h3>
         <p>Half gnome, half goblin (class unknown)
@@ -42,8 +94,10 @@
             <br>
             Created by Joseph (@jasonssecondalt on Discord)</p>
     </div>
+    </section>
     <h2>Press</h2>
-    <div class="press">
+    <section id="press">
+    <div class="person">
         <img class="about-image" src="images/Picture9.png" alt="Sam Sabula">
         <h3>Sam Sabula</h3>
         <p>Half-elf Warlock
@@ -52,8 +106,8 @@
             <br>
             Created by Matthew (@mattcraft900 on Discord)</p>
     </div>
-    <div class="press">
-        <p class="about-image">[no image available]</p>
+    <div class="person">
+        <p class="about-text"><br><br><br><br>[no image available]</p>
         <h3>The Fool Called V</h3>
         <p>Human Bard
             <br>
@@ -61,6 +115,7 @@
             <br>
             Created by (@thetimelessfool. on Discord)</p>
     </div>
+    </section>
     </main>
     <footer>
     <h2>The Sharn Inquisitor Archive</h2>
