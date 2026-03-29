@@ -25,11 +25,12 @@ secondary: #9BA17F
   font-style: normal;
 }
 #welcome {
- 
+    font-size: 18px;
     padding: 15px;
 }
 #welcome h3 {
     text-align: center;
+    font-size: 23px;
 }
 
 body{
